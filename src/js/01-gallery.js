@@ -20,3 +20,8 @@ function render (gallery){
 	}).join('');	
 	galleryRef.insertAdjacentHTML('beforeend', arrImg);
 }
+new SimpleLightbox('.gallery a', {
+	captionsData: `alt`,
+	captionDelay: 200,
+	animationSpeed: 100,
+})
